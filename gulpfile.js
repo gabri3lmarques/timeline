@@ -12,12 +12,12 @@ const sass = gulpSass(dartSass);
 
 const paths = {
     scss: {
-        src: './dev/sass/**/*.scss',
+        src: './dev/sass/main.scss',
         dest: './assets/css',
     },
     js: {
-        src: './dev/**/*.js', // Todos os arquivos JS dentro de /components e subpastas
-        dest: './assets/js',        // Diretório de destino para o JS unificado
+        src: './dev/**/*.js', 
+        dest: './assets/js',       
     },
 };
 // Tarefa para compilar SCSS em CSS
@@ -44,7 +44,7 @@ export function js() {
 
 // Tarefa para observar mudanças em SCSS e JS
 export function watchFiles() {
-    gulp.watch(paths.scss.src, scss);
+    gulp.watch([paths.scss.src, './dev/sass/main.scss'], scss);
     gulp.watch(paths.js.src, js); // Observa mudanças nos arquivos JS
 }
 

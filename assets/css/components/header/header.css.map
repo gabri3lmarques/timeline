@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/header/header.scss"],"names":[],"mappings":"AAEI,WACI,MAAA,KACA,cAAA","file":"header.css","sourcesContent":[".header {\n\n    h1 {\n        color: #ffffff;\n        margin-bottom: 30px;\n    }\n}"]}

@@ -1,2 +1,0 @@
-.btn{border-radius:8px;padding:10px 10px;cursor:pointer;transition:.3s;border:1px solid transparent;font-weight:700;font-size:.8em;color:222222;margin-top:10px}.btn:disabled{opacity:.5;color:#222;cursor:not-allowed}.btn.danger{color:#f86494}.btn.danger:disabled{opacity:.5;color:#222}.btn.danger:hover{border:1px solid #f86494}.btn.primary{color:#6e84f4;margin-right:10px}.btn.primary:disabled{opacity:.5;color:#222}.btn.primary:hover{border:1px solid #6e84f4}
-/*# sourceMappingURL=buttons.css.map */
