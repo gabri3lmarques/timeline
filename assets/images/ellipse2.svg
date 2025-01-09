@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 123" width="123" height="123">
+	<title>Ellipse 1</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,123,-123,0,50.823,0)">
+			<stop offset="0" stop-color="#22d1ee"/>
+			<stop offset="1" stop-color="#3d5af1"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="Ellipse 1" fill-rule="evenodd" class="s0" d="m61.5 123c-34 0-61.5-27.5-61.5-61.5 0-34 27.5-61.5 61.5-61.5 34 0 61.5 27.5 61.5 61.5 0 34-27.5 61.5-61.5 61.5z"/>
+</svg>

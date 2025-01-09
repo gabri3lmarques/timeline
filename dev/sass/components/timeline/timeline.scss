@@ -1,0 +1,12 @@
+.timeline {
+    background-image: url('../images/timeline.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    min-height: 300px;
+    margin-top: 40px;
+
+
+    .timeline-controls {
+        text-align: center;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    <div class="object">
+        <div>
+            <h1 class="timeline-title">Timeline</h1>
+            <div class="timeline-container">
+                <div class="timeline-controls button-group">
+                    <button class="btn primary" id="add-event-btn">Novo Evento</button>
+                    <button class="btn danger" id="clear-timeline-btn" disabled>Limpar Todos</button>
+                </div>
+                <div class="timeline" id="timeline">
+                </div>
+                <img class="ellipse1" src="./assets/images/ellipse1.svg" alt="">
+                <img class="ellipse2" src="./assets/images/ellipse2.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="event-modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Adicionar Evento</h3>
+            <form id="event-form">
+                <label for="title">Título</label>
+                <input type="text" id="title" required><br>
+                
+                <label for="summary">Resumo</label>
+                <textarea id="summary" required></textarea><br>
+                
+                <label for="date">Data (dd/mm/aaaa)</label>
+                <input type="text" id="date" placeholder="dd/mm/aaaa" required><br>
+                
+                <div class="button-group">
+                    <button class="btn primary" type="submit">Salvar</button>
+                    <button class="btn danger" type="button" id="close-modal-btn">Fechar</button>
+                </div>
+                <div id="modal-alert" class="modal-alert"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="confirm-modal">
+        <div class="modal-content">
+            <p id="confirm-message">Tem certeza que deseja excluir?</p>
+            <div class="button-group">
+                <button class="btn primary" id="confirm-cancel-btn">Não</button>
+                <button class="btn danger" id="confirm-ok-btn">Sim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

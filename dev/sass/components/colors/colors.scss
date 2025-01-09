@@ -1,0 +1,11 @@
+@function buttons($name) {
+    $colors: (
+      primary: #6e84f4,
+      danger: #f86494,
+    );
+    @return map-get($colors, $name);
+}
+
+$theme_blue: #3d5af1;
+$text: #6d7385;
+$dark222: #222222;

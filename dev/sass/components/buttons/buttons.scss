@@ -1,0 +1,48 @@
+@use '../colors/colors.scss';
+
+.btn {
+    border-radius: 8px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 300ms;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: 222222;
+    margin-top: 10px;
+
+    &:disabled {
+        opacity: 0.5;
+        color: colors.$dark222;
+        cursor: not-allowed;
+    }
+
+    &.danger {
+        color: colors.buttons(danger);
+
+        &:disabled {
+            opacity: 0.5;
+            color: colors.$dark222;
+        }
+
+        &:hover {
+            border: 1px solid colors.buttons(danger);
+        }
+    }
+
+    &.primary {
+        color: colors.buttons(primary);
+        margin-right: 10px;
+
+        &:disabled {
+            opacity: 0.5;
+            color: colors.$dark222;
+        }
+
+        &:hover {
+            border: 1px solid colors.buttons(primary);
+        }
+    }
+}
+
+
